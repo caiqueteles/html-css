@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+    h1{
+        background-color: lightcoral;
+        height: 300px;
+        width: 300px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black;
+
+/*shorthand: serve para juntar vários valores numa única property. Ex: 
+ border: width style color -> border: 5px solid black */
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+/*padding: top right bottom left -> padding 10px 10px 10px 10px OR se as medidas forem iguais,
+então padding: 10px 
+
+Agora se padding: 10px 20px, então padding-top e padding-bottom são 10px e padding-right e padding-left são 20px*/
+
+        margin-top: 70px;
+        margin-right: 10px;
+        margin-bottom: 70px;
+        margin-left: 70px;
+
+        /*o mesmo padrão de shorthand serve para margin*/
+    }
+
+    a{
+        border: 5px solid rgb(218, 46, 46);
+        padding: 5px
+    }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links também são exemplos de inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
